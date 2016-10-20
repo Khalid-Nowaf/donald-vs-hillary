@@ -24,21 +24,21 @@
 
     // initial values of dataPoints
     var dps = [
-        { label: "Anti-Donald", y: 0 },
-        { label: "Pro-Donald", y: 0 },
-        { label: "N", y: 0 },
-        { label: "anti-hillary", y: 0 },
-        { label: "Pro-hillary", y: 0 }
+        { label: "Anti-Donald", y: 1 },
+        { label: "Pro-Donald", y: 1 },
+        { label: "N", y: 1 },
+        { label: "anti-hillary", y: 1 },
+        { label: "Pro-hillary", y: 1 }
     ];
-    var totalEmployees = "total people on campus:" + 0;
+    var totalEmployees = "Total Tweets Analyzed::" + 0;
 
     var chart = new CanvasJS.Chart("chartContainer", {
         theme: "theme2",
         title: {
-            text: "People On Campus"
+            text: "Trump VS Clinton"
         },
         axisY: {
-            title: "Number of People"
+            title: "# Tweets"
         },
         legend: {
             verticalAlign: "top",
@@ -79,7 +79,7 @@
         }
 
         to += 1;
-        totalEmployees = "total tweets analized: " + to;
+        totalEmployees = "Total Tweets Analyzed: " + to;
         chart.options.data[0].legendText = totalEmployees;
         randC();
     }
@@ -113,7 +113,7 @@
 
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">Demo</h3>
+				<h3 class="panel-title">Tweets Sentiment Analysis</h3>
 			</div>
 			<div class="panel-body">
 				<div id="chartContainer" style="height:300px; width:100%;"></div>
