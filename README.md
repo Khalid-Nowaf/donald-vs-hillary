@@ -15,7 +15,7 @@ Run the Command `docker run -it -p 1880:1880 --name mynodered nodered/node-red-d
 
 [Node-Red Docs](http://nodered.org/docs/getting-started/installation) 
 
-## Install Twitter Stream node
+## 2) Install Twitter Stream node
 
 1. Go to `http://{host-ip}:1880` 
 Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
@@ -31,8 +31,42 @@ Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 [node-red-contrib-twitter-stream Docs](http://flows.nodered.org/node/node-red-contrib-twitter-stream)
 
 
-##How To Load The Flow
+## 3) How To Load The Flows
 
-Go to `http://{host-ip}:1880` 
+1. Open the flows.json file --> [flows.json](https://raw.githubusercontent.com/Khalid-Nowaf/donald-vs-hillary/master/flows.js) then copy the json string `Ctrl + C` or `cmd + C`
+
+2. Go to `http://{host-ip}:1880` 
 Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
+3. Click the **menu** in the top right conran
+
+4. Click  Import
+
+5. Click Clipboard
+
+6. Paste in the text box `Crtl + P` or `cmd + P`
+
+7. Click Import
+
+
+## Configer Twitter Stream node
+
+In order to complete this step you need **Twitter app**, if you don't have one please follow this tatoral (How to Register a Twitter App in 8 Easy Steps)[https://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/]. 
+After, than **Make a note of your OAuth Settings**, becuse we will need them soon.
+
+1. Go Back to Red-Node `http://{host-ip}:1880` 
+Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
+
+2. Double-Click on **Twitter Stream node**
+
+3. Click **Edit** The Connection
+
+4. fill failds with your OAuth info
+
+5. Click Add.
+
+## Run The Flow and The Web Page 
+
+At this point you are almost set, Click Deploy and you should see no Errors. If every thing is OK, Run the HTML file in the Broswer.
+
+> If your Red node IP not localhost or 127.0.0.1, then you need to edit the IP in the web page. make sure to use your IP.
