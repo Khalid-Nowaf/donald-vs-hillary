@@ -11,6 +11,5 @@ docker run -it -p 1880:1880 --name mynodered nodered/node-red-docker
 
 #How To Load The Flow
 
->Go to http://{host-ip}:1880 *
-where {host-ip} the docker ip or localhost or 127.0.0.1 .ect.
-
+>Go to `http://{host-ip}:1880` ff
+Where `{host-ip}` the docker ip or localhost or 127.0.0.1 ect
