@@ -1,19 +1,150 @@
 [
     {
-        "id": "931a52c.c1761b",
-        "type": "tab",
-        "label": "Flow 1"
-    },
-    {
-        "id": "5f0cda62.77ef94",
-        "type": "Twitter Users",
+        "id": "95e92e7.1187fd",
+        "type": "Twitter Topics",
         "z": "931a52c.c1761b",
         "connection": "",
-        "follow": "",
-        "x": 114.27084350585938,
-        "y": 274.8403015136719,
+        "topics": "donald trump",
+        "x": 112.28472900390625,
+        "y": 284.0555725097656,
         "wires": [
-            []
+            [
+                "b7423f2b.630c5"
+            ]
         ]
+    },
+    {
+        "id": "31051596.1aea8a",
+        "type": "sentiment",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "x": 509.2812042236328,
+        "y": 393.9930725097656,
+        "wires": [
+            [
+                "89464201.6272"
+            ]
+        ]
+    },
+    {
+        "id": "b7423f2b.630c5",
+        "type": "json",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "x": 335.2847137451172,
+        "y": 394.076416015625,
+        "wires": [
+            [
+                "31051596.1aea8a"
+            ]
+        ]
+    },
+    {
+        "id": "89464201.6272",
+        "type": "function",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "func": "msg.payload = JSON.parse(msg.sentiment.score);\nreturn msg; ",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 654.2708587646484,
+        "y": 392.8333435058594,
+        "wires": [
+            [
+                "f7e10959.cf0dc8"
+            ]
+        ]
+    },
+    {
+        "id": "f7e10959.cf0dc8",
+        "type": "websocket out",
+        "z": "931a52c.c1761b",
+        "name": " ",
+        "server": "293cb474.1ec83c",
+        "client": "",
+        "x": 847.2847137451172,
+        "y": 260.9166793823242,
+        "wires": []
+    },
+    {
+        "id": "78ad5693.d7ada8",
+        "type": "Twitter Topics",
+        "z": "931a52c.c1761b",
+        "connection": "",
+        "topics": "hillary clinton",
+        "x": 95,
+        "y": 544.0521087646484,
+        "wires": [
+            [
+                "23989c66.f434a4"
+            ]
+        ]
+    },
+    {
+        "id": "23989c66.f434a4",
+        "type": "json",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "x": 315.0069580078125,
+        "y": 522.5555419921875,
+        "wires": [
+            [
+                "7f139de0.f4f994"
+            ]
+        ]
+    },
+    {
+        "id": "7f139de0.f4f994",
+        "type": "sentiment",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "x": 495.0069580078125,
+        "y": 525.5555419921875,
+        "wires": [
+            [
+                "a99c0e0.b07d5f"
+            ]
+        ]
+    },
+    {
+        "id": "a99c0e0.b07d5f",
+        "type": "function",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "func": "msg.payload = JSON.parse(msg.sentiment.score);\nreturn msg;  ",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 645.0069465637207,
+        "y": 527.5555725097656,
+        "wires": [
+            [
+                "3a990b4.40f14f4"
+            ]
+        ]
+    },
+    {
+        "id": "3a990b4.40f14f4",
+        "type": "websocket out",
+        "z": "931a52c.c1761b",
+        "name": "",
+        "server": "73f691d7.4c953",
+        "client": "",
+        "x": 856.4965705871582,
+        "y": 579.3612365722656,
+        "wires": []
+    },
+    {
+        "id": "293cb474.1ec83c",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "/donald",
+        "wholemsg": "false"
+    },
+    {
+        "id": "73f691d7.4c953",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "hillary",
+        "wholemsg": "false"
     }
 ]

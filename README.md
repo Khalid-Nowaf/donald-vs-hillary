@@ -1,5 +1,8 @@
 # donald-vs-hillary
-This is a Demo of tweets sentiment Analysis with Trump vs Clinton via Twitter stream api using red node
+This is a Demo of tweets sentiment Analysis with Trump vs Clinton via Twitter stream api using red node.
+
+clone the project and follow the instructions.
+
 
 ## 1) How To Run Node-Red
 
