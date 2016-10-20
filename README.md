@@ -26,18 +26,18 @@ Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
 4. Click the **install** tab under **Mange palette** window
 
-5. Write `node-red-contrib-twitter-stream` in the search bar, then click install
-
-[node-red-contrib-twitter-stream Docs](http://flows.nodered.org/node/node-red-contrib-twitter-stream)
-
-
-## 3) How To Load The Flows
 
 1. Open the flows.json file --> [flows.json](https://raw.githubusercontent.com/Khalid-Nowaf/donald-vs-hillary/master/flows.js) then copy the json string `Ctrl + C` or `cmd + C`
 
 2. Go to `http://{host-ip}:1880` 
 Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
+5. Write `node-red-contrib-twitter-stream` in the search bar, then click install
+
+[node-red-contrib-twitter-stream Docs](http://flows.nodered.org/node/node-red-contrib-twitter-stream)
+
+
+## 3) How To Load The Flows
 3. Click the **menu** in the top right conran
 
 4. Click  Import
