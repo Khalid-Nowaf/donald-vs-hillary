@@ -86,7 +86,8 @@
 
     var randC = function () {
         var dtotal = (((dps[1].y - dps[0].y + dps[3].y) / (to - dps[2].y)) * 100);
-        var htotal = (((dps[4].y - dps[3].y + dps[0].y) / (to - dps[2].y)) * 100);
+        var htotal = (((dps[3].y - dps[4].y + dps[0].y) / (to - dps[2].y)) * 100); 
+	    // Was subtracting Pro Hillary from Anti; swapped 3 and 4.
         document.getElementById("d").innerHTML = ((dtotal / (dtotal + htotal)) * 100).toFixed(2) + " %";
         document.getElementById("h").innerHTML = ((htotal / (dtotal + htotal)) * 100).toFixed(2) + " %";
         chart.render();
