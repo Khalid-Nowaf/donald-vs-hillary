@@ -20,7 +20,7 @@ Run the Command `docker run -it -p 1880:1880 --name mynodered nodered/node-red-d
 1. Go to `http://{host-ip}:1880` 
 Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
-2. Click the **menu** in the top right conran
+2. Click the **menu** in the top right corner 
 
 3. Click **Mange palette**
 
@@ -40,18 +40,18 @@ Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
 3. Click the **menu** in the top right conran
 
-4. Click  Import
+4. Click  **Import**
 
-5. Click Clipboard
+5. Click **Clipboard**
 
 6. Paste in the text box `Crtl + P` or `cmd + P`
 
-7. Click Import
+7. Click **Import**
 
 
-## Configer Twitter Stream node
+## Configure Twitter Stream node
 
-In order to complete this step you need **Twitter app**, if you don't have one please follow this tatoral (How to Register a Twitter App in 8 Easy Steps)[https://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/]. 
+In order to complete this step you need **Twitter app**, if you don't have one please follow this tutorial [How to Register a Twitter App in 8 Easy Steps](https://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/). 
 After, than **Make a note of your OAuth Settings**, becuse we will need them soon.
 
 1. Go Back to Red-Node `http://{host-ip}:1880` 
@@ -61,12 +61,12 @@ Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
 3. Click **Edit** The Connection
 
-4. fill failds with your OAuth info
+4. fill the fields with your **OAuth info**
 
-5. Click Add.
+5. Click **Add**.
 
 ## Run The Flow and The Web Page 
 
 At this point you are almost set, Click Deploy and you should see no Errors. If every thing is OK, Run the HTML file in the Broswer.
 
-> If your Red node IP not localhost or 127.0.0.1, then you need to edit the IP in the web page. make sure to use your IP.
+> If your Red-Node **IP** not **localhost** or **127.0.0.1**, then **you need to edit the IP in the webpage sourcecode**, make sure to use your IP.
