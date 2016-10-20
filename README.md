@@ -67,6 +67,6 @@ Where `{host-ip}` the **docker IP**, **localhost** or **127.0.0.1** ect
 
 ## Run The Flow and The Web Page 
 
-At this point you are almost set, Click Deploy and you should see no Errors. If every thing is OK, Run the HTML file in the Broswer.
+At this point you are almost set, Click **Deploy** and you should see no Errors. If every thing is OK, Run the HTML file in the Broswer.
 
 > If your Red-Node **IP** not **localhost** or **127.0.0.1**, then **you need to edit the IP in the webpage sourcecode**, make sure to use your IP.
